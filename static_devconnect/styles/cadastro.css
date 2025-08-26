@@ -52,6 +52,12 @@ main > div{
     width: 100%;
 }
 
+.formulario-botao-upload{
+    height: 35px;
+    width: 100%;
+    font-size: var(--tamanho-fonte-sm);
+}
+
 .formulario > p{
     text-transform: uppercase;
     font-size: var(--tamanho-fonte-sm);
@@ -85,3 +91,16 @@ main > div{
     width: 133px;
     height: 39px;
 }
+
+.btn-upload{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 35px;
+    width: 100%;
+}
+
+
+
+
+

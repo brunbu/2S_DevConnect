@@ -6,11 +6,11 @@
     <meta name="autor" content="Bruno">
     <meta name="description" content="Site da empresa DevConnect">
 
-    <title>Tela login - DevConnect </title>
+    <title>Tela de cadastro - DevConnect </title>
 
     <link rel="shortcut icon" href="../images/Componente logotipo preto.svg" type="image/x-icon">
    <!--CSS-->
-    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="../styles/cadastro.css">
     <link rel="stylesheet" href="../styles/global.css">
 
 </head>
@@ -24,36 +24,41 @@
                 width: 100%;">
 
                   <div>
+                      <label for="">Nome e Sobrenome:</label>
+                      <input type="text" name="" id="">
+                    </div>
+                    
+                  <div>
                       <label for="">Nome de Usuario:</label>
                       <input type="text" name="" id="">
                     </div>
                     
                     <div>
-                     <label for="">Senha:</label>
-                     <input type="password" name="" id="">
-                  </div>
-                  
-                  <button type="submit" class="formulario-botao-azul">Entrar</button>
+                        <label for="">E-mail:</label>
+                        <input type="email" name="" id="">
+                    </div>
+                    
+                    <div>
+                        <label for="">Senha:</label>
+                        <input type="password" name="" id="">
+                    </div>
+                    <div>
+                        <label for="file" class="btn-upload">Fazer upload da imagem</label>
+                        <input type="file" id="file" hidden>
+                    </div>
+                    
 
-                  <p>ou</p>
-                   
-                <a href="#">Esquceu a senha</a>
+                <button type="submit" class="formulario-botao-azul">Cadastra</button>
+                
 
             </form>
 
             <!--seção de cadastro-->
             <section id="secao-cadastro" class="estilo-formulario">
-                <p>Não tenho conta. <a href="../pages/cadastro.html">Cadastre-se</a></p>
+                <p>Já possui uma conta? <a href="../pages/index.html">Conectar-se</a></p>
             </section>
 
-            <p class="informacao-aplicativo">Obtenha o aplicativo.</p>
 
-            <!--Seção de inicialização-->
-            <section id="secao-intalacao">
-                <img src="../images/app-store.svg" alt="imagem informando para baixar na app store">
-                
-                <img src="../images/google-play.svg" alt="imagem informando para baixar na app store">
-            </section>
 
         </div>
     </main>

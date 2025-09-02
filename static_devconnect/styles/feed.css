@@ -1,15 +1,13 @@
 main{
-    background-color: cadetblue;
+    background-color: var(--cor-cinza);
     min-height: 100vh;
     width: 100%;
     display: flex;
     justify-content: center ;
 }
 .container-flex-publi{
-    background-color: blue;
     width: 90%;
     max-width: 900px;
-    height: 700px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -59,6 +57,7 @@ main{
    text-decoration: none;
 }
 
+
 /*secao cria publi*/
 #cadastro-publi{
     display: flex;
@@ -69,9 +68,11 @@ main{
 
 #cadastro-publi > h2{
     font-size: var(--tamanho-fonte-lg);
-    color: var(--cor-preto);
+    color: var(--cor-roxo-medio);
     font-weight: 800;
 }
+
+
 
 #cadastro-publi > form > textarea{
     width: 100%;
@@ -81,4 +82,107 @@ main{
     padding: 10px;
     color: var(--cor-preto);
     font-size: var(--tamanho-fonte-sm);
+    border: var(--borda);
+    
+}
+
+#cadastro-publi > form > textarea::placeholder{
+    color: var(--cor-roxo-medio);
+}
+
+
+
+#cadastro-publi > form > footer{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;  
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.formulario-botao-azul{
+  width: 100%;
+  max-width: 143px;
+}
+
+/* seção publicações */
+#publicacoes{
+    background-color: blueviolet;
+    width: 100%;
+    height: 600px;
+}
+
+.card-publi{
+    max-width: 100%;
+    height: 400px;
+    background-color: var(--cor-branco);
+}
+
+.card-publi > header{
+   /* height: 80px; */
+    background-color: var(--cor-branco);
+    display: flex;
+    align-items: center;
+    padding: 3%;
+}
+
+.card-publi > header > a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: var(--cor-preto);
+    font-weight: 600;
+}
+
+.card-publi > figure{
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagem-publicacao{
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 346px;
+}
+
+.descricao-publicacao{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: var(--tamanho-fonte-md);
+    font-weight: 500;
+    padding: 0 3%;
+    order: 2;
+}
+.interacoes-publicacao{
+    width: 123px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    order: 1;
+    margin: 15px 3%;
+}
+
+.interacoes-publicacao > button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.interacoes-publicacao > button > img{
+    /* tamanho para imagem */
+}
+
+.interacoes-publicacao > span{
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 600;
+    color: var(--cor-preto);
+}
+
+.card-publi>button {
+    margin: 15px 3%;
 }

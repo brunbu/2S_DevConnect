@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevConnect - Perfil</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8fdfd;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Cabeçalho */
+    header {
+      background: white;
+      border-bottom: 2px solid black;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .logo span:first-child {
+      color: #8a2be2; /* Dev em roxo */
+    }
+
+    .logo span:last-child {
+      color: purple; /* Connect em roxo escuro */
+    }
+
+    .menu-icons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .menu-icons img {
+      width: 28px;
+      cursor: pointer;
+    }
+
+    .menu-icons .perfil-icon {
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+    }
+
+    /* Perfil */
+    .perfil {
+      text-align: center;
+      margin: 30px 20px 10px 20px;
+    }
+
+    .perfil img {
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+    }
+
+    .perfil h2 {
+      margin: 10px 0 5px 0;
+    }
+
+    .perfil-info {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin: 10px 0;
+      font-size: 15px;
+    }
+
+    .perfil-links {
+      margin-top: 10px;
+    }
+
+    .perfil-links a {
+      color: blue;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    /* Publicações */
+    .publicacoes {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .publicacoes h3 {
+      text-align: center;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    .publicacoes h3::before {
+      content: "🗂 ";
+    }
+
+    .card {
+      background: white;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card-header img {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+    }
+
+    .card p {
+      margin: 10px 0;
+    }
+
+    .card-footer {
+      display: flex;
+      gap: 20px;
+      font-size: 14px;
+      color: #333;
+      align-items: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- Cabeçalho -->
+  <header>
+    <div class="logo">
+      <span>Dev</span><span>Connect</span>
+    </div>
+    <div class="menu-icons">
+      <img src="https://img.icons8.com/ios/50/8a2be2/home.png" alt="Home">
+      <img src="https://img.icons8.com/ios/50/8a2be2/like.png" alt="Curtir">
+      <img class="perfil-icon" src="../images/Lewisjapan.jpg" alt="Perfil">
+    </div>
+  </header>
+
+  <!-- Perfil -->
+  <section class="perfil">
+    <img src="perfil.jpg" alt="Foto de perfil">
+    <h2>Lewis</h2>
+    <div class="perfil-info">
+      <span>2 publicações</span>
+      <span>1000 seguindo</span>
+    </div>
+    <div class="perfil-links">
+      <a href="#">Editar Perfil</a> | <a href="#">Sair</a>
+    </div>
+  </section>
+
+  <!-- Publicações -->
+  <section class="publicacoes">
+    <h3>Publicações</h3>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="perfil.jpg" alt="Foto perfil">
+        <strong>Lewis</strong>
+      </div>
+      <p>Dns no gp da holanda</p>
+      <div class="card-footer">
+        <span>❤️ 1.3M</span>
+        <span>💬 876 comentários</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-header">
+        <img src="perfil.jpg" alt="Foto perfil">
+        <strong>Lewis</strong>
+      </div>
+      <p>Dns no gp da holanda</p>
+      <div class="card-footer">
+        <span>❤️ 1.3M</span>
+        <span>💬 876 comentários</span>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

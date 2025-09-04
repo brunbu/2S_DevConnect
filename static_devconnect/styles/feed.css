@@ -1,5 +1,4 @@
 main{
-    background-color: var(--cor-cinza);
     min-height: 100vh;
     width: 100%;
     display: flex;
@@ -108,14 +107,12 @@ main{
 
 /* seção publicações */
 #publicacoes{
-    background-color: blueviolet;
     width: 100%;
     height: 600px;
 }
 
 .card-publi{
-    max-width: 100%;
-    height: 400px;
+    width: 100%;
     background-color: var(--cor-branco);
 }
 
@@ -138,7 +135,6 @@ main{
 
 .card-publi > figure{
     width: 100%;
-    background-color: blueviolet;
     display: flex;
     flex-direction: column;
 }
@@ -158,6 +154,7 @@ main{
     font-weight: 500;
     padding: 0 3%;
     order: 2;
+    flex-wrap: wrap;
 }
 .interacoes-publicacao{
     width: 123px;
@@ -185,4 +182,13 @@ main{
 
 .card-publi>button {
     margin: 15px 3%;
+    background-color: transparent;
+    border: none;
+
+    font-size: var(--tamanho-fonte-sm);
+    font-weight: 400;
+    color: var(--cor-preto);
+
+
+    cursor: pointer;
 }

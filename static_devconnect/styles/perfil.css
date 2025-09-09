@@ -57,6 +57,7 @@ main>header {
     align-items: center;
     gap: 20px;
     justify-content: center;
+    
 }
 
 .perfil-pic {
@@ -101,13 +102,7 @@ main>header {
 }
 
 /* Publicações */
-.publicacoes {
-    max-width: 600px;
-    margin: 20px auto;
-    padding: 20px;
-}
-
-.publicacoes > h2 {
+.publicacoesicone {
     margin-bottom: 20px;
     font-size: 22px;
     color: var(--cor-cinza-claro);
@@ -115,19 +110,37 @@ main>header {
     justify-content: center;
 }
 
-.publicacoes {
+.publicacoes1 {
     background-color: var(--cor-branco);
-    padding: 15px;
-    margin-bottom: 20px;
-    border: var(--borda);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border:  1px solid var(--cor-preto);
+    border-radius: var(--borda-arredondada);
+
+}
+.publicacoes2 {
+    background-color: var(--cor-branco);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border:  1px solid var(--cor-preto);
 }
 
-.publicacoes > h3 {
+
+.publicacoes2 {
+    background-color: var(--cor-branco);
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.publicacoes2 > h3 {
     font-size: 16px;
     margin-bottom: 10px;
 }
 
-.publicacoes > p {
+.publicacoes2 > p {
     margin-bottom: 10px;
 }
 
@@ -137,18 +150,25 @@ main>header {
     margin-bottom: 8px;
     font-size: 14px;
 }
-
-.publicacoes > a {
+.publicacoes > h2{
+    display: flex;
+    justify-content: center;
+}
+.publicacoes1 > a {
     font-size: 14px;
-    color: var(--cor-cinza);
     text-decoration: none;
 }
+.publicacoes2 > a {
+    font-size: 14px;
+    text-decoration: none;
+}
+
 #cabecalho {
     width: 100%; /*100% da janela de visualização*/
     height: 80px;
     background-color: var(--cor-branco);
     display: flex;
-   justify-content: center;
+    justify-content: center;
    
   }
 

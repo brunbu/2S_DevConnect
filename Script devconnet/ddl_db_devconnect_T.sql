@@ -12,6 +12,9 @@ senha NVARCHAR (50) NOT NULL,
 foto_perfil_url NVARCHAR(150) NULL
 );
 
+SELECT * FROM tb_usuario
+
+
 CREATE TABLE tb_publicacao(
 id INT IDENTITY(1,1) PRIMARY KEY,
 id_usuario INT FOREIGN KEY REFERENCES tb_usuario(id),
@@ -19,6 +22,9 @@ descricao NVARCHAR(100) NULL,
 imagem_url NVARCHAR(100) NULL,
 data_publicacao DATE NOT NULL
 );
+
+SELECT * FROM tb_publicacao
+
 
 CREATE TABLE tb_comentario(
 id INT IDENTITY(1,1) PRIMARY KEY,
@@ -28,17 +34,26 @@ texto NVARCHAR(100) NOT NULL,
 data_comentario DATE NOT NULL
 );
 
+SELECT * FROM tb_comentario
+
+
 CREATE TABLE tb_curtida(
 id INT IDENTITY(1,1) PRIMARY KEY,
 id_usuario INT FOREIGN KEY REFERENCES tb_usuario(id),
 id_publicacao INT FOREIGN KEY REFERENCES tb_publicacao(id),
 );
 
+SELECT * FROM tb_curtida
+
+
 CREATE TABLE tb_seguidor(
 id_usuario_seguir INT NOT NULL, --pessoa que quer seguir
 id_usuario_seguida INT NOT NULL, --pessoa que sera seguida
 PRIMARY KEY(id_usuario_seguir, id_usuario_seguida)
 );
+
+SELECT * FROM tb_seguidor
+
 ALTER TABLE tb_seguidor
 ADD CONSTRAINT id_usuario_seguir FOREIGN KEY (id_usuario_seguir) REFERENCES tb_usuario(id)
 

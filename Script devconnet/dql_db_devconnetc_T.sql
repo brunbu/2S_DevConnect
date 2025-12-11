@@ -1,4 +1,5 @@
 --DQL
+
 SELECT 
     seguir.nome_usuario AS nome_seguidor,
     seguida.nome_usuario AS nome_seguida
